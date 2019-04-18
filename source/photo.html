@@ -7,10 +7,8 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <span class="visually-hidden">Ссылка на главную страницу</span>
-      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
-    </a>
+   <div class="container">
+
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -27,14 +25,19 @@
         </li>
       </ul>
     </nav>
+    <a class="page-header__logo" href="#">
+      <span class="visually-hidden">Ссылка на главную страницу</span>
+      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
+    </a>
     <button class="page-header__toggle button" type="button">Открыть меню</button>
     <div class="page-header__title">
-      <img class="page-header__title-image page-header__title" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+      <img class="page-header__title-image" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
     </div>
+   </div>
   </header>
 
 
-  <main class="page-main">
+  <main class="page-main container">
     <header class="page-main__header">
       <h1 class="page-main__title">Фото и видео</h1>
       <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -81,23 +84,26 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <a class="page-footer__link" href="#">#visitsedona</a>
     <ul class="social">
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+        <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+        <a class="social__link social__link--facebook" href="#">
+        <span class="visually-hidden">Мы в Фейсбуке</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+        <a class="social__link social__link--youtube" href="#">
+        <span class="visually-hidden">Мы в Ютубе</span></a>
       </li>
     </ul>
     <p class="made-by">
       <span>Разработано</span>
       <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visuallyhidden">html academy</span>
+        <span class="visually-hidden">html academy</span>
       </a>
     </p>
   </footer>

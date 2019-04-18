@@ -1,10 +1,35 @@
 .page-header {
+  position: relative;
+
+  margin-top: -10px;
+
   background-color: white;
 }
 
 .page-header__title {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  margin: 0px;
+  margin-top: -30px;
+  padding: 0px;
+
+  position: relative;
+  z-index: 1;
+
+  width: 320px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg"), url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 -60px, 0 0;
+  background-size: cover, cover;
+
+  &--index {
+    padding-top: 90px;
+    padding-bottom: 140px;
+  }
+}
+
+.page-header__logo {
+  position: relative;
+  z-index: 3;
 }
 
 .page-header__toggle {
