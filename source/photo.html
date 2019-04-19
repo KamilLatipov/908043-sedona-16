@@ -3,36 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <span class="visuallyhidden">Ссылка на главную страницу</span>
-      <img class="page-header__logo-image" src="#" width="102" height="83" alt="Логотип Sedona">
-    </a>
+  <header class="page-header container">
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
+          <a class="main-nav__link main-nav__link--active button" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          <a class="main-nav__link button" href="photo.html">Фото и видео</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          <a class="main-nav__link button" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">HTML Academy</a>
+          <a class="main-nav__link button" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <a class="page-header__logo" href="#">
+      <span class="visually-hidden">Ссылка на главную страницу</span>
+      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
+    </a>
+    <button class="page-header__toggle button" type="button">Открыть меню</button>
     <div class="page-header__title">
-      <img class="page-header__title-image" src="#" width="281" height="214" alt="Добро пожаловать в Седону">
+      <img class="page-header__title-image" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
     </div>
   </header>
 
-  <main class="page-main">
+
+  <main class="page-main container">
     <header class="page-main__header">
       <h1 class="page-main__title">Фото и видео</h1>
       <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -41,16 +43,16 @@
       <h2 class="visually-hidden">Кадры из Седоны</h2>
       <ul class="photos__list">
         <li class="photos__item">
-          <img src="#" class="photos__image photos__image--fullscreen" alt="первая фотография">
+          <img class="photos__image photos__image--fullscreen" src="img/photo-sunset-mobile@1x.jpg" alt="первая фотография">
           <h3 class="photos__title">Неродные просторы</h3>
-          <p class="photos__author">Автор фото: Борис</p>
+          <p class="photos__author">Автор фото: <span class="photos__author--name">Борис</span></p>
           <button class="photos__like" type="button">
             <span class="visually-hidden">Мне нравится</span>
           </button>
           <p class="photos__like-count">1350</p>
         </li>
         <li>
-          <img class="photos__image" src="#" alt="вторая фотография">
+          <img class="photos__image" src="img/photo-cactus-mobile@1x.jpg" alt="вторая фотография">
           <h3 class="photos__title">Неродные просторы</h3>
           <p class="photos__author">Автор фото: Сергей</p>
           <button class="photos__like" type="button">
@@ -59,7 +61,7 @@
           <p class="photos__like-count">143</p>
         </li>
         <li>
-          <img class="photos__image" src="#" alt="третья фотография">
+          <img class="photos__image" src="img/photo-roads-mobile@1x.jpg" alt="третья фотография">
           <h3 class="photos__title">Неродные просторы</h3>
           <p class="photos__author">Автор фото: Петр</p>
           <button class="photos__like" type="button">
@@ -68,7 +70,7 @@
           <p class="photos__like-count">96</p>
         </li>
         <li>
-          <img class="photos__image" src="#" alt="четвертая фотография">
+          <img class="photos__image" src="img/photo-bridge-mobile@1x.jpg" alt="четвертая фотография">
           <h3 class="photos__title">Неродные просторы</h3>
           <p class="photos__author">Автор фото: Антон</p>
           <button class="photos__like" type="button">
@@ -79,23 +81,26 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <a class="page-footer__link" href="#">#visitsedona</a>
-    <ul class="social__list">
+    <ul class="social">
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+        <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+        <a class="social__link social__link--facebook" href="#">
+        <span class="visually-hidden">Мы в Фейсбуке</span></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+        <a class="social__link social__link--youtube" href="#">
+        <span class="visually-hidden">Мы в Ютубе</span></a>
       </li>
     </ul>
     <p class="made-by">
       <span>Разработано</span>
       <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visuallyhidden">html academy</span>
+        <span class="visually-hidden">html academy</span>
       </a>
     </p>
   </footer>
