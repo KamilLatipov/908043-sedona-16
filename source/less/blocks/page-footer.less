@@ -11,3 +11,22 @@
   font-weight: 700;
   color: black;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__link {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+  justify-content: space-around;
+
+  padding-top: 30px;
+  }
+}

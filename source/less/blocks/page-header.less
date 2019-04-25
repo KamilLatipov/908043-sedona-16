@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  margin-top: -10px;
+
   background-color: white;
 }
 
@@ -10,11 +10,9 @@
   padding: 0;
   position: relative;
   z-index: 1;
-  width: 320px;
-  background-image: url("../img/bg-back-mobile@1x.jpg"), url("../img/bg-intro-triangle-mobile.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 -60px, 0 0;
-  background-size: cover, cover;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -60px;
 
   &--index {
     padding-top: 90px;
@@ -29,4 +27,28 @@
 
 .page-header__toggle {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 333px;
+  }
+  .page-header__title {
+    margin-top: 0;
+    padding-bottom: 70px;
+
+    background-position: 0 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    left: 545px;
+  }
+
+  .page-header__title {
+    background-size: cover;
+  }
 }
