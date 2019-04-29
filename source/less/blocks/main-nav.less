@@ -33,6 +33,9 @@
   .main-nav__list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+
+
 
     font-size: 14px;
     line-height: 26px;
@@ -45,6 +48,18 @@
   }
 
   .main-nav__item {
+    width: 153;
+
+    margin-top: 10px;
+
     box-shadow: none;
+
+    &:nth-child(2) {
+      margin-right: 150px;
+    }
+
+    &:nth-child(3) {
+      margin-right: -20px;
+    }
   }
 }
