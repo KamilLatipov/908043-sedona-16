@@ -43,15 +43,21 @@
   .photos__list {
     display: flex;
     flex-wrap: wrap;
+
+    padding-left: 0;
   }
 
   .photos__item {
-    width: 320px;
+    width: @tablet-width * 0.5;
     margin: 0;
 
     &-1 {
-      width: 768px;
+      width: 100%;
     }
+  }
+
+  .photos__text {
+    margin-left: 30px;
   }
 }
 
@@ -60,7 +66,7 @@
     width: 400px;
 
     &-1 {
-      width: 1200px;
+      width: 100%;
     }
   }
 }
