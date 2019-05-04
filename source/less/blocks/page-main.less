@@ -1,11 +1,17 @@
 .page-main__header {
   position: relative;
+  width: 300px;
   z-index: 2;
+
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
+
+  margin: 0 auto;
   margin-top: -30px;
   margin-bottom: 27px;
   padding: 0;
+
   background-color: white;
 }
 
@@ -13,5 +19,33 @@
   font-size: 18px;
   color: @text-color - 51;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-main__header {
+    margin-top: 0;
+
+    width: 560px;
+  }
+
+  .page-main__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-main__header {
+    padding-top: 30px;
+  }
 }
