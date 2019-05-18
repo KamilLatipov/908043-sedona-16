@@ -7,12 +7,16 @@
 .page-header__title {
   margin: 0;
   margin-top: -30px;
+  margin-bottom: 70px;
   padding: 0;
   position: relative;
+
+  height: 156px;
+
   z-index: 1;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg") ;
   background-repeat: no-repeat;
-  background-position: 0 -60px;
+  background-position: 0 0;
 
   &--index {
     padding-top: 90px;
@@ -42,10 +46,16 @@
   }
 
   .page-header__title {
-    margin-top: 0;
-    padding-bottom: 70px;
+    margin-top: 8px;
+    margin-bottom: 76px;
+    padding-bottom: 132px;
 
-    background-position: 0 12px;
+    background-position: cover;
+
+    &--index {
+      margin-bottom: 0;
+      padding-bottom: 305px;
+    }
   }
 }
 
@@ -60,6 +70,11 @@
   }
 
   .page-header__title {
+    padding-bottom: 145px;
     background-size: cover;
+
+    &--index {
+      padding-bottom: 268px;
+    }
   }
 }
