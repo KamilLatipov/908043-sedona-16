@@ -29,10 +29,33 @@
 }
 
 .features__item {
+  position: relative;
+
   width: 220px;
+
 
   margin-bottom: 30px;
   margin-left: 70px;
+  padding-top: 120px;
+
+  &--house::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+
+    width: 37px;
+    height: 36px;
+  }
+
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -48,6 +71,10 @@
     margin: 0 auto;
     margin-bottom: 45px;
     text-align: center;
+
+    &--souvenirs {
+      order: 3;
+    }
   }
 
   .features__briefly {
